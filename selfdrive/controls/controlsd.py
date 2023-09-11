@@ -32,6 +32,7 @@ from openpilot.system.hardware import HARDWARE
 from openpilot.selfdrive.controls.neokii.cruise_state_manager import CruiseStateManager
 from openpilot.selfdrive.controls.ntune import ntune_common_enabled, ntune_common_get
 from openpilot.selfdrive.controls.neokii.speed_controller import SpeedController
+from openpilot.selfdrive.controls.radard import RADAR_TO_CAMERA
 
 SOFT_DISABLE_TIME = 3  # seconds
 LDW_MIN_SPEED = 31 * CV.MPH_TO_MS
