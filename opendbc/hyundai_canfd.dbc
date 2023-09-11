@@ -128,6 +128,7 @@ BO_ 272 LKAS_ALT: 32 XXX
  SG_ STEER_REQ : 52|1@1+ (1,0) [0|1] "" XXX
  SG_ TORQUE_REQUEST : 41|11@1+ (1,-1024) [0|4095] "" XXX
  SG_ LKA_ICON : 38|2@1+ (1,0) [0|255] "" XXX
+ SG_ LFA_ICON : 47|2@1+ (1,0) [0|3] "" XXX
  SG_ NEW_SIGNAL_1 : 27|2@1+ (1,0) [0|255] "" XXX
  SG_ LFA_BUTTON : 56|1@1+ (1,0) [0|255] "" XXX
  SG_ COUNTER : 16|8@1+ (1,0) [0|255] "" XXX
@@ -151,6 +152,7 @@ BO_ 298 LFA: 16 ADRV
  SG_ STEER_REQ : 52|1@1+ (1,0) [0|1] "" XXX
  SG_ TORQUE_REQUEST : 41|11@1+ (1,-1024) [0|4095] "" XXX
  SG_ LKA_ICON : 38|2@1+ (1,0) [0|255] "" XXX
+ SG_ LFA_ICON : 47|2@1+ (1,0) [0|3] "" XXX
  SG_ NEW_SIGNAL_1 : 27|2@1+ (1,0) [0|255] "" XXX
  SG_ LFA_BUTTON : 56|1@1+ (1,0) [0|255] "" XXX
  SG_ COUNTER : 16|8@1+ (1,0) [0|255] "" XXX
@@ -681,8 +683,10 @@ VAL_ 80 LKA_MODE 1 "warning only" 2 "assist" 6 "off" ;
 VAL_ 96 TRACTION_AND_STABILITY_CONTROL 0 "On" 5 "Limited" 1 "Off";
 VAL_ 234 LKA_FAULT 0 "ok" 1 "lka fault" ;
 VAL_ 272 LKA_ICON 0 "hidden" 1 "grey" 2 "green" 3 "flashing green" ;
+VAL_ 272 LFA_ICON 0 "hidden" 1 "grey" 2 "green" 3 "flashing green" ;
 VAL_ 272 LKA_MODE 1 "warning only" 2 "assist" 6 "off" ;
 VAL_ 298 LKA_ICON 0 "hidden" 1 "grey" 2 "green" 3 "flashing green" ;
+VAL_ 298 LFA_ICON 0 "hidden" 1 "grey" 2 "green" 3 "flashing green" ;
 VAL_ 480 LFA_ICON 0 "hidden" 1 "grey" 2 "green" 3 "flashing green" ;
 VAL_ 298 LKA_MODE 1 "warning only" 2 "assist" 6 "off" ;
 VAL_ 304 PARK_BUTTON 1 "Pressed" 2 "Not Pressed";
