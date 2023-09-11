@@ -123,7 +123,7 @@ def create_lfahda_mfc(packer, enabled, hda_set_speed=0):
   }
   return packer.make_can_msg("LFAHDA_MFC", 0, values)
 
-def create_acc_commands(packer, enabled, accel, upper_jerk, idx, lead_visible, set_speed, stopping, long_override, CS, stock_cam,vision_dist,RelSpd):
+def create_acc_commands(packer, enabled, accel, upper_jerk, idx, lead_visible, set_speed, stopping, long_override, use_fca, CS, stock_cam,vision_dist,RelSpd):
   commands = []
 
   cruise_enabled = enabled and CS.out.cruiseState.enabled
