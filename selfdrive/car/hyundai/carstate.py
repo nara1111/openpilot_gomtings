@@ -246,7 +246,6 @@ class CarState(CarStateBase):
     if self.CP.openpilotLongitudinalControl and CruiseStateManager.instance().cruise_state_control:
       available = ret.cruiseState.available if self.CP.sccBus == 2 else -1
       CruiseStateManager.instance().update(ret, self.main_buttons, self.cruise_buttons, BUTTONS_DICT, available)
-      print("self.CP.openpilotLongitudinalControl")
 
     return ret
 
